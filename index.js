@@ -19,7 +19,7 @@ const replaceVal = (tempVal, OrignalVal)=>{
 
 const server = http.createServer((req,res)=>{
     if(req.url == "/"){
-        requests("http://api.openweathermap.org/data/2.5/weather?q=jalgaon&appid=6b8f60c5f5de94b1db81d36292ca4ffa")
+        requests("{api.openweathermap.org} KEY")
         .on('data', (chunk)=> {
             const ObjData = JSON.parse(chunk);
             const arrData = [ObjData]
